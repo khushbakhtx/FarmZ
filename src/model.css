@@ -1,0 +1,118 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; 
+    color: white; 
+  }
+  
+  .main-container {
+    display: flex; 
+  }
+  
+  .chat-container {
+    width: 40%; 
+    padding: 20px;
+    background-color: #1a1a1a; 
+  }
+  
+  .chat-messages {
+    height: 200px; 
+    overflow-y: auto; 
+    margin-bottom: 10px; 
+  }
+  
+  .chat-form {
+    display: flexbox; 
+  }
+  
+  .chat-input {
+    flex-grow: 1; 
+    padding: 10px;
+    width: 70%;
+    border: none; 
+    border-bottom: 2px solid #b5b0bf;
+    background-color: transparent; 
+    color: white; 
+  }
+  
+  .chat-input::placeholder {
+     color: #888;
+  }
+  
+  .chat-input:focus {
+     outline: none; 
+     border-bottom-color: #ffffff;
+  }
+  
+  .send-button {
+     padding: 10px;
+     border-radius: 10px;
+     width: 20%;
+     border: none; 
+     background-color: white; 
+     color: #111111; 
+     cursor: pointer;
+     margin-left: 10px; 
+     transition: all 0.5s ease;
+  }
+  
+  .send-button:hover {
+     color: #fff;
+     background-color: #111111; 
+  }
+  
+  .app-container {
+    width: 40%; 
+    padding: 20px;
+  }
+  
+  .app-title {
+    text-align: center;
+  }
+  
+  .prediction-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #868686;
+    border-radius: 3px;
+    background-color: transparent;
+    color: white;
+  }
+  
+  .form-input::placeholder {
+     color: #888; 
+  }
+  
+  .form-input:focus {
+     outline: none; 
+     border-bottom-color: #ffffff;
+  }
+  
+  .submit-button {
+     padding: 10px;
+     border-radius: 10px;
+     width: 200px;
+     border: none; 
+     background-color: white;
+     color: #000000;
+     font-size: large;
+     cursor: pointer;
+     transition: background-color 0.3s ease, color 0.3s ease; 
+  }
+  
+  .submit-button:hover {
+     background-color: #111111;
+     color: #fff; 
+  }
+  
+  .prediction-result {
+     text-align: center;
+     margin-top: 20px;
+  }

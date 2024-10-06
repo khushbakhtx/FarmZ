@@ -25,7 +25,7 @@ function Model() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://127.0.0.1:8000/predict', inputData);
+      const response = await axios.post('https://farmz-backend.onrender.com/predict', inputData);
       setPrediction(response.data.predicted_crops);
     } catch (error) {
       console.error("Error making prediction", error);
